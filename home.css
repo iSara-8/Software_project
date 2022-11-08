@@ -1,0 +1,383 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color:var(--pink);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+
+.ibtn{
+    display: flex ;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:white;
+    color: var(--pink);
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    justify-content: center;
+}
+
+.ibtn:hover{
+    font-size:  1.9rem;
+}
+
+header{
+    position: fixed;
+    background:#fff;
+    height: 75px;
+    width: 100%;
+    padding: 0px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   
+}
+
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+
+header .icons {
+    font-size: 2.5rem;
+    padding:0 2rem;
+  
+}
+header #icon1:hover ,header #icon2:hover , header #icon3:hover  {
+    transform: translateY(-10px);
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("img/home-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+.ihome{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("img/bannar3.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+     
+}
+
+.ihome .content{
+    max-width: 50rem;
+    
+}
+
+.ihome .content h3{
+    font-size: 6rem;
+    color:#666;
+}
+
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .about-img{
+    flex:1 1 40rem;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Footer Start **************************************************************************************************************/
+
+.h{
+    width: 80%;
+    height: 1px;
+    border : 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(190, 190, 190);
+}
+
+.social_icon {
+    position: absolute; 
+    align-items: center;
+    
+      }
+      footer {
+        width:100%;  
+        padding:10px 0px;
+        clear: bottom;
+        position:absolute;
+        display:block;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    
+    footer .social_icon , footer .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    
+    
+    footer .social_icon li {
+        list-style: none;
+    }
+    
+    footer .social_icon li a {
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    
+    .social_icon img,
+    .social img {
+        width: 40px;
+        height: 40px;
+    }
+    .social .twitt,
+    .social_icon .twitt {
+        width: 40px;
+        height: 40px;
+    }
+    
+    footer .social_icon li a:hover {
+        transform: translateY(-10px);
+    }
+    
+    footer .menu li  {
+        font-size: 1.6em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        text-decoration: none;
+        opacity: 1;
+    }
+    footer .menu li a  {
+       
+        color: rgb(0, 0, 0);
+      
+    }
+    
+    footer .menu li a:hover {
+        opacity: 0.80;
+    }
+    
+    footer p {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}

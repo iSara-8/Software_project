@@ -1,0 +1,368 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+
+header{
+    position: fixed;
+    background:#fff;
+    height: 75px;
+    width: 100%;
+    padding: 0px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+
+}
+
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+
+header .icons {
+    font-size: 2.5rem;
+    padding:0 2rem;
+  
+}
+
+header #icon1:hover ,header #icon2:hover , header #icon3:hover  {
+    transform: translateY(-10px);
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.form-container {
+	width: 100vw;
+	height: 125vh;
+    background-color: #f4b8d5;
+    display: flex;
+   	justify-content: center;
+	align-items: center;
+}
+
+.upload-files-container {
+	background-color: #f7fff7;
+	width: 420px;
+	padding: 30px 60px;
+	border-radius: 40px;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.347) 0px 10px 20px, rgba(0, 0, 0, 0.347) 0px 6px 6px;
+}
+
+.drag-file-area {
+	border: 2px dashed #cf6096;
+	border-radius: 40px;
+	margin: 10px 0 15px;
+	padding: 30px 50px;
+	width: 350px;
+	text-align: center;
+}
+
+.drag-file-area .upload-icon {
+	font-size: 50px;
+}
+
+.drag-file-area h3 {
+	font-size: 26px;
+	margin: 15px 0;
+}
+.drag-file-area label {
+	font-size: 19px;
+}
+.drag-file-area label .browse-files-text {
+	color: #cf6096;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.browse-files span {
+	position: relative;
+	top: -25px;
+}
+.default-file-input {
+	opacity: 0;
+}
+.cannot-upload-message {
+	background-color: #ffc6c4;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	padding: 5px 10px 5px 30px;
+	border-radius: 5px;
+	color: #BB0000;
+	display: none;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.cannot-upload-message span, .upload-button-icon {
+	padding-right: 10px;
+}
+.cannot-upload-message span:last-child {
+	padding-left: 20px;
+	cursor: pointer;
+}
+.file-block {
+	color: #f7fff7;
+	background-color: #cf6096;
+  	transition: all 1s;
+	width: 390px;
+	position: relative;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 15px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.file-info {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+.file-icon {
+	margin-right: 10px;
+}
+.file-name, .file-size {
+	padding: 0 3px;
+}
+.remove-file-icon {
+	cursor: pointer;
+}
+.progress-bar {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 4.5%;
+	width: 0;
+	height: 5px;
+	border-radius: 25px;
+	background-color: #4BB543;
+}
+.upload-button {
+	font-family: 'Montserrat';
+	background-color: #cf6096;
+	color: #f7fff7;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 7.5px 50px;
+	cursor: pointer;
+}
+
+
+/* Footer Start **************************************************************************************************************/
+
+.h{
+    width: 80%;
+    height: 1px;
+    border : 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(190, 190, 190);
+}
+
+.social_icon {
+    position: absolute; 
+    align-items: center;
+    
+      }
+      footer {
+        width:100%;  
+        padding:10px 0px;
+        clear: bottom;
+        position:absolute;
+        display:block;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    
+    footer .social_icon , footer .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    
+    
+    footer .social_icon li {
+        list-style: none;
+    }
+    
+    footer .social_icon li a {
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    
+    .social_icon img,
+    .social img {
+        width: 40px;
+        height: 40px;
+    }
+    .social .twitt,
+    .social_icon .twitt {
+        width: 40px;
+        height: 40px;
+    }
+    
+    footer .social_icon li a:hover {
+        transform: translateY(-10px);
+    }
+    
+    footer .menu li  {
+        font-size: 1.6em;
+        color: rgb(0, 0, 0);
+        margin: 0 10px;
+        display: inline-block;
+        text-decoration: none;
+        opacity: 1;
+    }
+    footer .menu li a  {
+       
+        color: rgb(0, 0, 0);
+      
+    }
+    
+    footer .menu li a:hover {
+        opacity: 0.80;
+    }
+    
+    footer p {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
